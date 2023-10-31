@@ -20,7 +20,7 @@ const messages = [
     { runes: "ᚲᚺᚨᛗᛒᛖᚱ", english: "chamber", hint: "A room or enclosed space."},
     { runes: "ᚾᛟᚱᛊᛖ", english: "norse", hint: "Related to Northern European culture."},
     { runes: "ᛗᚨᚷᛁᚲ", english: "magic", hint: "Sorcery, spells, and enchantments."},
-    { runes: "ᚺᛁᛊᛏᛟᚱᛁ", english: "history", hint: "The saga of the past, where tales of heroes and legends are written."},
+    { runes: "ᚺᛁᛊᛏᛟᚱᛁ", english: "history", hint: "The saga of the past."},
 ];
 
 let currentMessageIndex = -1;
