@@ -1,0 +1,297 @@
+/* -------------------- HOME PAGE -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Maitree&display=swap');
+
+body {
+    background-color: black;
+    background-image: url("pictures/mythchamber.jpg");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    letter-spacing: 0.7px;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
+.navbar:hover {
+    background-color:black;
+    transition: background-color 0.5s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+#logo {
+    max-width: 100px; 
+    margin-right: 50px;
+}
+
+/* Navigation items */
+#mainmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 10px;
+}
+
+#mainmenu > li:hover #chambers {
+    display: block;
+}
+
+.options{
+    margin-right: 50px;
+    position: relative;
+}
+
+.options a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+.navbar .options a:hover{
+    color: #5ffb17;
+}
+
+#chambers {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    white-space: nowrap;
+    padding: 20px 15px;
+    align-items: center;
+}
+
+.rooms a {
+    color: #5ffb17;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .rooms:hover {
+    font-size: 23px;
+    transform: scale(1.2);
+}
+
+/* Sign up being fixed */
+#mainmenu > li:last-child {
+    margin-right: 0;
+}
+
+/* -------------------- Header -------------------- */
+.banner {
+    background-color: rgba(0, 0, 0, 0.374);
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    margin-top: 130px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#bannerLogo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.banner p {
+	flex: 2;
+	text-align: center;
+	color: whitesmoke;
+	margin-bottom: 20px;
+	font-family: 'Maitree', serif;
+	font-size: 20px;
+}
+
+/* -------------------- Chambers -------------------- */
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 35px auto;
+}
+
+.container h2 {
+    text-align: center;
+    color: #ffd700;
+    font-family: "Cinzel Decorative", sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+#rooms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rooms > div {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 35px 5px;
+    padding: 15px;
+    text-align: center;
+    width: 25%;
+    margin: 10px;
+}
+
+#button-link {
+    display: inline-block;
+    padding: 5px 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Cinzel Decorative", sans-serif;
+    font-weight: bold;
+}
+
+#button-link h3{
+    font-size: 20px;
+    color: #5ffb17;
+}
+
+#button-link:hover {
+    transform: scale(1.3);
+}
+
+/* .pulsate {
+    animation: pulse 1s infinite;
+    z-index:
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } */
+
+.rooms p{
+    color: white;
+    font-family: 'Maitree', serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.subscribe {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 35px auto;
+}
+
+.news h3{
+    color:#ffd700;
+    font-family: "Cinzel Decorative", sans-serif;
+    font-size: 14px;
+}
+
+.news {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.news form input[type="email"] {
+    width: 40%;
+    padding: 10px;
+    background: rgb(206, 205, 205);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ffd700;
+    text-align: center;
+    font-family: 'Maitree', serif;
+    font-size: 13px;
+}
+.news form input[type="email"]:hover{
+    border-color: #5ffb17;
+}
+
+.news form button[type="submit"] {
+    padding: 12px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    font-family: 'Maitree', serif;
+    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.162);
+}
+
+.news form button[type="submit"]:hover{
+	background-color:rgb(28, 27, 27);
+    color: #5ffb17;
+}
+
+/* -------------------- Footer -------------------- */
+.end {
+    padding: 15px 0;
+    font-size: 15px;
+    background-color: black;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    font-family: 'Maitree', serif;
+    font-size: 12px;
+}
+
+.end-content p{
+   color: #ffd700;
+   margin: 5px 0;
+   font-size: 13px;
+}
+
+.social, p {
+    display: inline-block;
+    margin: 0 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social:hover {
+    color: #ffd700;
+    transform: scale(1.3);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="norse.css">
+  <title>Norse Chamber</title>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <img src="pictures/logo.png" alt="logo icon" id="logo">
+    <ul id="mainmenu">
+      <li class="options"><a href="index.html">Home</a></li>
+      <li class="options"><a href="about.html">About</a></li>
+      <li class="options"><a href="#">How it works</a></li>
+      <li class="options"><a href="#">Chambers</a>
+        <ul id="chambers">
+          <li class="rooms"><a href="norse.html">Norse</a></li>
+          <li class="rooms"><a href="#">Greek</a></li>
+          <li class="rooms"><a href="#">Egyptian</a></li>
+        </ul>
+      </li>
+      <li class="options"><a href="signup.html">Sign in</a></li>
+    </ul>
+</div>
+
+<!-- Header section-->
+<header class="banner">
+  <div>
+    <h1>Norse Chamber</h1>
+    <p>Unearth the secrets of the North, from the cunning exploits of Loki to the grandeur of Asgard.
+      <br>Prepare to be immersed in a saga of valor and intrigue, where you'll encounter challenges and riddles at every turn.
+      <br>Are you ready to embark on a journey through the myths and mysteries of the North?</p>
+  </div>
+</header>
+
+<!-- Game section-->
+<div class="rune-decipher">
+
+  <div class="content">
+    <div class="left-panel">
+      <img src="pictures/runes.jpg" alt="Rune Decipher Image" id="rune-image">
+    </div>
+
+    <div class="right-panel">
+      <h2>Rune Decipher</h2>
+      <p>Runes, ancient symbols of mystique and magic, have woven a captivating tale throughout history.
+        These enigmatic characters, forming runic alphabets known as "futharks," held unique powers of 
+        communication and divination for the Norse and Germanic cultures. What adds to their intrigue is 
+        the revelation that not all modern letters existed in these ancient alphabets.</p>
+        <br><br>
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>ᚨ ᛒ ᚲ ᛞ ᛖ ᚠ ᚷ ᚺ ᛁ ᛃ ᚲ ᛚ ᛗ ᚾ ᛟ ᛈ ᚲ ᚱ ᛊ ᛏ ᚢ ᚢ ᚹ ᚲᛊ ᛁ ᛉ</p>
+        <br><br>
+      <p>Can you decode the ancient message?</p>
+      <button id="openPopUp" class="start-btn">Start</button>
+    </div>
+  </div>
+
+  <div id="popup-game">
+		<div class="popup-content">
+      <button id="closePopUp">X</button>
+      <div class="rune-message" id="rune-message">
+        <!-- The rune message will be generated -->
+      </div>
+      <input type="text" id="user-input"/>
+      <button id="check-button">Check</button>
+      <button id="hint-button" class="pulsate">?</button>
+      <p id="response-message"></p>
+      <p id="timer"></p>
+      <p id="codes-left"></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="end">
+  <div class="end-content">
+      <p>© 2023 Myth Chambers</p>
+  </div>
+
+  <div class="social-media">
+    <p>Find us on:</p>
+      <a href="https://www.facebook.com" class="social">Facebook</a>
+      <a href="https://www.tiktok.com" class="social">TikTok</a>
+      <a href="https://www.instagram.com" class="social">Instagram</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

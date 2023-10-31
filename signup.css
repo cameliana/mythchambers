@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Maitree&display=swap');
+
+body {
+    background-color: black;
+    background-image: url("pictures/locks.jpg");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    letter-spacing: 0.7px;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
+.navbar:hover {
+    background-color:black;
+    transition: background-color 0.5s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+#logo {
+    max-width: 100px; 
+    margin-right: 50px;
+}
+
+/* Navigation items */
+#mainmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 10px;
+}
+
+#mainmenu > li:hover #chambers {
+    display: block;
+}
+
+.options{
+    margin-right: 50px;
+    position: relative;
+}
+
+.options a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+.navbar .options a:hover{
+    color: #5ffb17;
+}
+
+#chambers {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    white-space: nowrap;
+    padding: 20px 15px;
+    align-items: center;
+}
+
+.rooms a {
+    color: #5ffb17;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .rooms:hover {
+    font-size: 23px;
+    transform: scale(1.2);
+}
+
+/* Sign up being fixed */
+#mainmenu > li:last-child {
+    margin-right: 0;
+}
+/* -------------------- Form -------------------- */
+.form-content {
+    background-color: rgba(41, 38, 38, 0.9);
+    color: #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Maitree', serif;
+    font-size: 14px;
+    width: 50%;
+    margin: 130px auto 50px auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    border-color: #ffd700;
+    margin: 20px;
+}
+
+h2{
+    color: #5ffb17;
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
+.input-container {
+	text-align: center;
+	margin-bottom: 15px;
+}
+input[type="text"],
+input[type="password"] {
+	width: 50%;
+	padding: 10px;
+	margin: 5px 0;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	background: rgb(206, 205, 205);
+}
+.form-buttons {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.form-buttons button {
+	margin: 0 10px;
+	/* background-color: #ffd700; */
+    background-color: black;
+	font-family: "Cinzel Decorative", sans-serif;
+    font-weight: bolder;
+	font-size: 16px;
+	padding: 10px 20px;
+    color: #ffd700;
+}
+
+.logInIcon {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.logInIcon a {
+    margin: 0 10px;
+}
+
+/* -------------------- Footer -------------------- */
+.end {
+    padding: 15px 0;
+    font-size: 15px;
+    background-color: black;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    font-family: 'Maitree', serif;
+    font-size: 12px;
+}
+
+.end-content p{
+   color: #ffd700;
+   margin: 5px 0;
+   font-size: 13px;
+}
+
+.social, p {
+    display: inline-block;
+    margin: 0 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social:hover {
+    color: #ffd700;
+    transform: scale(1.3);
+}

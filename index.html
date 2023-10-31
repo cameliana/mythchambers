@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Myth Chambers Homepage</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <img src="pictures/logo.png" alt="logo icon" id="logo">
+        <ul id="mainmenu">
+          <li class="options"><a href="index.html">Home</a></li>
+          <li class="options"><a href="about.html">About</a></li>
+          <li class="options"><a href="#">How it works</a></li>
+          <li class="options"><a href="#">Chambers</a>
+            <ul id="chambers">
+              <li class="rooms"><a href="norse.html">Norse</a></li>
+              <li class="rooms"><a href="#">Greek</a></li>
+              <li class="rooms"><a href="#">Egyptian</a></li>
+            </ul>
+          </li>
+          <li class="options"><a href="signup.html">Sign up</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero section -->
+    <div class="banner">
+        <div>
+            <p>Welcome to</p>
+            <img src="pictures/logo.png" alt="logo icon" id="bannerLogo"><br>
+            <p>Prepare for an immersive puzzle-solving adventure like no other.
+            <br>Our chambers challenge your wits and creativity.
+            <br>Can you unlock the secrets?</p>
+        </div>
+    </div>    
+    
+    <!-- Explore the chambers section -->
+    <div class="container">
+        <h2>Explore the chambers</h2>
+        <div class="rooms" id="rooms">
+            <div>
+                <a href="norse.html" id="button-link" class="pulsate"><h3>Norse</h3></a>
+                <p>Embark on epic quests, confront the might of the Norse gods, and unveil the secrets of the Northern realms.</p>
+            </div>
+            <div>
+                <a href="#.html" id="button-link" class="pulsate"><h3>Greek</h3></a>
+                <p>Step into the enchanting world of Greek mythology, where gods, heroes, and mythical creatures come to life.</p>
+            </div>
+            <div>
+                <a href="#.html" id="button-link" class="pulsate"><h3>Egyptian</h3></a>
+                <p>Journey to the captivating realms of Egyptian mythology, where pharaohs, gods, and enigmatic artifacts await your exploration.</p>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Subscription form -->
+    <div class="subscribe">
+        <div class="news">
+            <h3>Subscribe to unlock epic adventures, exclusive content and updates.</h3>
+            <form action="https://formsubmit.co/janedoe@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="end">
+        <div class="end-content">
+            <p>© 2023 Myth Chambers</p>
+        </div>
+  
+        <div class="social-media">
+          <p>Find us on:</p>
+            <a href="https://www.facebook.com" class="social">Facebook</a>
+            <a href="https://www.tiktok.com" class="social">TikTok</a>
+            <a href="https://www.instagram.com" class="social">Instagram</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

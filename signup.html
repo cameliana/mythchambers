@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Myth Chambers Homepage</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <img src="pictures/logo.png" alt="logo icon" id="logo">
+        <ul id="mainmenu">
+          <li class="options"><a href="index.html">Home</a></li>
+          <li class="options"><a href="about.html">About</a></li>
+          <li class="options"><a href="#">How it works</a></li>
+          <li class="options"><a href="#">Chambers</a>
+            <ul id="chambers">
+              <li class="rooms"><a href="norse.html">Norse</a></li>
+              <li class="rooms"><a href="#">Greek</a></li>
+              <li class="rooms"><a href="#">Egyptian</a></li>
+            </ul>
+          </li>
+          <li class="options"><a href="signup.html">Sign up</a></li>
+        </ul>
+    </div>
+
+    <!-- Sign up form -->
+    <div class="signup-container">
+        <div class="form-content">
+            <form>
+                <h2>Sign Up</h2>
+                <hr>
+                <div class="input-container">
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="password"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+
+                <label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label>
+                <br>
+				<p>By creating an account you agree to our <a href="#" style="color:#5ffb17">Terms and conditions</a></p>
+
+                <div class="form-buttons">
+                    <button type="submit">Sign Up</button>
+                    <button type="reset" onclick="goToHomePage()">Cancel</button>
+                </div>
+
+               <hr>
+
+                <div class="logIn">
+                    <h2>Login to your account</h2>
+                    <div class="logInIcon">
+                        <a href="https://accounts.google.com/" id="logInIcon"><img src="pictures/google.png" alt="googleemail" style="width: 30px;"></a>
+                        <a href="https://appleid.apple.com/" id="logInIcon"><img src="pictures/apple.png" alt="appleemail" style="width: 27px;"></a>
+                        <a href="https://www.facebook.com" id="logInIcon"><img src="pictures/fb.png" alt="facebook" style="width: 30px;"></a>
+                        <a href="https://www.outlook.com" id="logInIcon"><img src="pictures/outlook.png" alt="email" style="width: 40px;"></a>
+                    </div>
+                </div>
+			</form>
+		</div>
+	</div>
+
+    <footer class="end">
+        <div class="end-content">
+            <p>© 2023 Myth Chambers</p>
+        </div>
+  
+        <div class="social-media">
+          <p>Find us on:</p>
+            <a href="https://www.facebook.com" class="social">Facebook</a>
+            <a href="https://www.tiktok.com" class="social">TikTok</a>
+            <a href="https://www.instagram.com" class="social">Instagram</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
